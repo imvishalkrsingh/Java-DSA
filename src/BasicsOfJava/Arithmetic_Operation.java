@@ -25,5 +25,9 @@ public class Arithmetic_Operation {
 //        mod of two numbers
         System.out.print("Mod of x and y : ");
         System.out.println(x%y);
+
+        int z = x % y;
+//        printing text and variables Together
+        System.out.println("Mod of X and Y is : " +z);
     }
 }
