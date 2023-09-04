@@ -1,6 +1,6 @@
 package Conditional_Statements;
 import java.util.Scanner;
-// Q1. Take Numbers from user and check it whether it is positive or negative Number.
+// Q1. Write a java program to Take Numbers from user and check it whether it is positive or negative Number.
 public class check_Positive_Or_Negative {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
