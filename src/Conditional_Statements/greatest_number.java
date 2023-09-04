@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 // Q 10. Write a java program to take 3 positive integers input and print the greatest of them.
 
+
 public class greatest_number {
     public static void main(String[] args) {
 
