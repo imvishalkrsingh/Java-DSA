@@ -1,4 +1,4 @@
-package Loops.ForLoop;
+package Loops.whileLoop;
 import java.util.Scanner;
 public class binaryToDecimal {
     public static void main(String[] args) {
