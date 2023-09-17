@@ -1,4 +1,4 @@
-package Oops.Basics;
+package Oops.ClassAndObjects;
 
 public class method_intro {
 

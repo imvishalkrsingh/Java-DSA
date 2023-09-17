@@ -1,4 +1,4 @@
-package Oops.Basics;
+package Oops.ClassAndObjects;
 
 class student{
     int age;
