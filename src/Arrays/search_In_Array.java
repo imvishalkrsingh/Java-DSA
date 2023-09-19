@@ -20,8 +20,13 @@ public class search_In_Array {
         for (int i = 0; i < number.length; i++) {
             if (number[i] == search) {
                 ans = i;
-                System.out.println( "Found " + search + " at index "  + ans );
             }
+        }
+        if(ans == -1 ){
+            System.out.println("Not found");
+        }
+        else{
+            System.out.println( "Found " + search + " at index "  + ans );
         }
     }
 }
