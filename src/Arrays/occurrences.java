@@ -2,20 +2,30 @@ package Arrays;
 import java.util.Scanner;
 
 // Q. write a program to count an Occurrences of a number in an array
-public class occurences {
+public class occurrences {
 
-    static int countOccurences(int[] arr, int x){
+    static int countOccurrences(int[] arr, int x){
         int count = 0;
         for(int i = 0 ; i < arr.length; i++){
            if(arr[i] == x){
                count ++;
            }
-           else{
-               System.out.println("Element not found in the array.");
-               break;
-           }
+           else if (a)
         }
         return count;
+    }
+
+
+//    Make a class to check last occurrences of a number in an array.
+
+    static int lastOccurrences(int[] arr, int x){
+        int lastIndex = -1;
+        for(int i = 0; i < arr.length; i++){
+            if(arr[i] == x){
+                lastIndex = i;
+            }
+        }
+        return lastIndex;
     }
 
     public static void main(String[] args) {
@@ -35,6 +45,8 @@ public class occurences {
         System.out.print("Enter the number to Search : ");
         int x = sc.nextInt();
 
-        System.out.println("Occurrence of " + x + " is : " + countOccurences(array, x));
+        System.out.println("Occurrence of " + x + " is : " + countOccurrences(array, x));
+
+        System.out.println("Last Occurrences of " + x + " is : " + lastOccurrences(array,x));
     }
 }
