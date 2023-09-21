@@ -1,5 +1,6 @@
 package Arrays;
 
+import java.util.Arrays;
 import java.util.Scanner;
 public class arrayClone {
 
@@ -33,5 +34,13 @@ public class arrayClone {
 
         System.out.println("Clone Array : ");
         printArray(cloneArray);
+
+        Arrays.sort(cloneArray);
+
+        System.out.print("Sort an Array : ");
+        for (int num : cloneArray) {
+            System.out.print(num + " ");
+        }
+
     }
 }
