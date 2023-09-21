@@ -10,7 +10,10 @@ public class occurrences {
            if(arr[i] == x){
                count ++;
            }
-           else if (a)
+//           else{
+//               System.out.println("Element not found in the array.");
+//               break;
+//           }
         }
         return count;
     }
