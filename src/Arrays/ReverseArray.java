@@ -29,7 +29,13 @@ public class ReverseArray {
         for (int i = 0; i < size; i ++){
             System.out.print(array[i] + " ");
         }
+        System.out.println();
 
-        System.out.println("Here is the Reverse Array : " + reverseArray(array));
+        System.out.println("Here is the Reverse of the Array : ");
+        for (int i = size-1; i >= 0; i--){
+            System.out.print(array[i] + " ");
+        }
+
+//        System.out.println("Here is the Reverse Array : " + reverseArray(array));
     }
 }
