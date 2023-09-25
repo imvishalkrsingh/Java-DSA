@@ -18,25 +18,22 @@ public class SortingArray {
         arr[j] = temp;
     }
 
-    static  void sortZeroAndOne(int[] arr){
+    static void sortZeroAndOne(int[] arr){
         int n = arr.length;
         int left = 0,  right = n-1;
 
         while (left < right){
             if(arr[left] == 1 && arr[right] == 0){
-                swap(arr,left,right);
+                swap(arr, left, right);
                 left++;
                 right--;
+            } else {
+                if(arr[left] == 0) left++;
+                if(arr[right] == 1) right--;
             }
         }
-
-        if(arr[left] == 0){
-            left++;
-        }
-        if(arr[right] == 1){
-            right--;
-        }
     }
+
 
 
     public static void main(String[] args) {
