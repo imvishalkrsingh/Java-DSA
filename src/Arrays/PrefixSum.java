@@ -13,13 +13,24 @@ public class PrefixSum {
 
     static int[] prefixSumArray(int[] arr){
         int n = arr.length;
-        int [] pref = new int[n];
+        int [] pref = new int[n];   // creating extra array to store original array and modify
 
         pref[0] = arr[0];
         for(int i = 1; i < n; i++){
             pref[i] = pref[i-1] + arr[i];
         }
         return pref;
+    }
+
+    // an extra method to find prefix sum without creating an extra array
+    static int[] makePrefixSumArray(int[] arr){
+        int n = arr.length;
+
+        arr[0] = arr[0];
+        for(int i = 1; i < n; i++){
+            arr[i] = arr[i-1] + arr[i];
+        }
+        return arr;
     }
 
     public static void main(String[] args) {
@@ -43,6 +54,13 @@ public class PrefixSum {
         System.out.println("Prefix Sum Array : ");
 
         printArray(pref);
+
+
+        //without creating an extra array
+        int [] makePref = makePrefixSumArray(array);
+
+        System.out.println("Here is the prefix array without an extra array : ");
+        printArray(makePref);
 
     }
 
