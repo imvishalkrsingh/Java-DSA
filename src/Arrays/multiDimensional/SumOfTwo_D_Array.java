@@ -7,7 +7,6 @@ public class SumOfTwo_D_Array {
     static void print_2_D_array(int[][] arr){
         int rows = arr.length;
 
-//        int column = arr[][].length;
         for (int i = 0; i < arr.length; i++){
             for (int j = 0; j < arr[i].length; j++){
                 System.out.print(arr[i][j] + " ");
@@ -15,15 +14,22 @@ public class SumOfTwo_D_Array {
             System.out.println();
         }
     }
+
+    static int[][] sumOf2_D_array(int[][] arr1, int[][] arr2){
+        int rows = arr1.length;
+        int columns = arr1[0].length;
+
+        int[][] sumArray = new int[rows][columns];
+
+        for (int i = 0; i < rows; i++){
+            for (int j = 0; j < columns; j++){
+                sumArray[i][j] = arr1[i][j] + arr2[i][j];
+            }
+        }
+        return sumArray;
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
-//        int [][] array = new int[][]{
-//                {1,2,3},
-//                {4,5,6},
-//                {7,8,9}
-//        };
-
 
         System.out.print("Enter Rows of array : ");
         int rows = sc.nextInt();
@@ -59,5 +65,9 @@ public class SumOfTwo_D_Array {
         }
         System.out.println("Here is the Elements of Array 2 : ");
         print_2_D_array(array2);
+
+
+        System.out.println("Here is the Sum of Array1 & Array2 :");
+        print_2_D_array(sumOf2_D_array(array1,array2));
     }
 }
