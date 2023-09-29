@@ -1,6 +1,8 @@
 package Arrays.multiDimensional;
+
 import java.util.Scanner;
-public class TwoDimensional {
+
+public class SumOfTwo_D_Array {
 
     static void print_2_D_array(int[][] arr){
         int rows = arr.length;
