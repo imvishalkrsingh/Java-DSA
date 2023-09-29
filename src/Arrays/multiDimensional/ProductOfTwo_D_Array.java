@@ -11,6 +11,30 @@ public class ProductOfTwo_D_Array {
         }
     }
 
+    static int[][] product_of_2_D_Array(int[][] arr1, int[][] arr2){
+        int row1 = arr1.length;
+        int column1 = arr1[0].length;
+
+        int row2 = arr2.length;
+        int column2 = arr2[0].length;
+
+        if(column1 != row2){
+            System.out.println("Multiplication is not possible. Number of columns in the first matrix should be equal to the number of rows in the second matrix.");
+            return null;
+        }
+
+        int[][] resultArray = new int[row1][column2];
+
+        for (int i = 0; i < row1; i++) {
+            for (int j = 0; j < column2; j++) {
+                for (int k = 0; k < column1; k++) {
+                    resultArray[i][j] += arr1[i][k] * arr2[k][j];
+                }
+            }
+        }
+        return resultArray;
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -49,5 +73,8 @@ public class ProductOfTwo_D_Array {
 
         System.out.println("Here is the Array 2 : ");
         printArray(array2);
+
+        System.out.println("Here is Product of Array1 & Array2 : ");
+        printArray(product_of_2_D_Array(array1,array2));
     }
 }
