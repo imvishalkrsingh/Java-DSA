@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.singleDimensional;
 import java.util.Scanner;
 public class FindUnique {
 

@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.singleDimensional;
 import java.util.Scanner;
 
 // Q. write a program to count an Occurrences of a number in an array

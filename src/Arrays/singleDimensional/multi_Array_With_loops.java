@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.singleDimensional;
 
 public class multi_Array_With_loops {
     public static void main(String[] args) {

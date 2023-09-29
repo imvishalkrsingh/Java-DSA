@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.singleDimensional;
 
 public class arraySum {
     public static void main(String[] args) {

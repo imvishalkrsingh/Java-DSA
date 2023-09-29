@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.singleDimensional;
 
 public class array_With_Loops {
 

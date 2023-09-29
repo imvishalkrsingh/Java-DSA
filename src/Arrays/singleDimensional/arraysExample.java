@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.singleDimensional;
 
 class newArray{
     void demoArray(){
