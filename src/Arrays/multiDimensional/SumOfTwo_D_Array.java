@@ -66,6 +66,12 @@ public class SumOfTwo_D_Array {
         System.out.println("Here is the Elements of Array 2 : ");
         print_2_D_array(array2);
 
+        // Checking both the arrays are equal in dimension or not
+        if (array1.length != array2.length || array1[0].length != array2[0].length) {
+            System.out.println("Both arrays are not equal in dimensions.");
+            return;
+        }
+
 
         System.out.println("Here is the Sum of Array1 & Array2 :");
         print_2_D_array(sumOf2_D_array(array1,array2));
