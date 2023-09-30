@@ -14,7 +14,19 @@ public class TransposeMatrix {
         }
     }
 
+    static int[][] findTranspose(int[][] arr){
+        int row = arr.length;
+        int column = arr[0].length;
 
+        int[][] ans = new int[column][row];
+
+        for (int i = 0; i < column; i++){
+            for (int j = 0; j < row; j++){
+                ans[i][j] = arr[j][i];
+            }
+        }
+        return ans;
+    }
 
     public static void main(String[] args) {
 
@@ -39,7 +51,7 @@ public class TransposeMatrix {
         printArray(array);
 
         System.out.println("Here is the Transpose of the given Matrix : ");
-
+        printArray(findTranspose(array));
 
     }
 }
