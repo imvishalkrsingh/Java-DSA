@@ -2,18 +2,6 @@ package Arrays.multiDimensional;
 import java.util.Scanner;
 public class TransposeMatrix {
 
-    static void printArray(int[][] arr){
-        int row = arr.length;
-        int column = arr[0].length;
-
-        for(int i = 0; i < row; i++){
-            for (int j = 0; j < column; j++){
-                System.out.print(arr[i][j] + " ");
-            }
-            System.out.println();
-        }
-    }
-
     static int[][] findTranspose(int[][] arr){
         int row = arr.length;
         int column = arr[0].length;
@@ -26,6 +14,18 @@ public class TransposeMatrix {
             }
         }
         return ans;
+    }
+
+    static void printArray(int[][] arr){
+        int row = arr.length;
+        int column = arr[0].length;
+
+        for(int i = 0; i < row; i++){
+            for (int j = 0; j < column; j++){
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 
     public static void main(String[] args) {
