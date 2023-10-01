@@ -2,19 +2,17 @@ package Arrays.multiDimensional;
 import java.util.Scanner;
 public class PascalTriangle {
 
-    static void printArray(int[][] arr){
-        int row = arr.length;
-        int column = arr[0].length;
+    static void printMatrix(int[][] arr){
 
-        for (int i = 0; i < row; i++){
-            for (int j = 0; j < column; j++){
+        for (int i = 0; i < arr.length; i++){
+            for (int j = 0; j < arr[i].length; j++){
                 System.out.print(arr[i][j] + " ");
             }
             System.out.println();
         }
     }
 
-    static int[][] pascalTriangle(int n){
+    static int[][] pascal(int n){
         int[][] ans = new int[n][];
 
         for (int i = 0; i < n; i++){
@@ -26,7 +24,6 @@ public class PascalTriangle {
             for (int j = 1; j < i; j++){
                 ans[i][j] = ans[i-1][j] + ans[i-1][j-1];
             }
-
         }
         return ans;
     }
@@ -36,9 +33,9 @@ public class PascalTriangle {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter rows of Array : ");
-        int rows = sc.nextInt();
+        int n = sc.nextInt();
 
-        int[][] ans = pascalTriangle(rows);
-        printArray(ans);
+        int[][] ans = pascal(n);
+        printMatrix(ans);
     }
 }
