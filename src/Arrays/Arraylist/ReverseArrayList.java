@@ -3,8 +3,8 @@ Q. Write a program to Reverse the given Array List
  */
 
 package Arrays.Arraylist;
-
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class ReverseArrayList {
 
@@ -32,9 +32,9 @@ public class ReverseArrayList {
         list.add(10);
 
         System.out.println("Original List : " + list);
-        reverseList(list);
+//        reverseList(list);
 
-        System.out.print("Reversed list : ");
+        Collections.reverse(list);
         System.out.println("Reversed List " + list);
 
     }
