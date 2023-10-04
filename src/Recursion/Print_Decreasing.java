@@ -2,7 +2,7 @@
 package Recursion;
 import java.util.Scanner;
 
-public class Print__N_to_1 {
+public class Print_Decreasing {
 
     static void printDecreasing(int n){
         if (n == 1){
@@ -20,7 +20,7 @@ public class Print__N_to_1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter value of N : ");
+        System.out.print("Enter value of N : ");
         int n = sc.nextInt();
 
         printDecreasing(n);
