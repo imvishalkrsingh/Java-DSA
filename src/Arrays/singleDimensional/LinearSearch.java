@@ -10,6 +10,15 @@ public class LinearSearch {
         }
         return -1;
     }
+
+    public static int linearSearch1(int[] arr, int key){ // for array input
+        for(int i=0;i<arr.length;i++){
+            if(arr[i] == key){
+                return i;
+            }
+        }
+        return -1;
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -35,5 +44,7 @@ public class LinearSearch {
         int result = linearSearch(array, key); // calling linear Search method
 
         System.out.println(key + " Found at : " + result);
+
+
     }
 }
