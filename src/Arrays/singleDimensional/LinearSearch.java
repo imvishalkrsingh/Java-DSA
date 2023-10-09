@@ -32,7 +32,7 @@ public class LinearSearch {
         System.out.print("Enter the value to search : ");
         int key = sc.nextInt();
 
-        int result = linearSearch(array, key);
+        int result = linearSearch(array, key); // calling linear Search method
 
         System.out.println(key + " Found at : " + result);
     }
