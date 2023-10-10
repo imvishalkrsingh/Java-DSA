@@ -1,4 +1,4 @@
-package Functions;
+package Loops.ForLoop;
 import java.util.Scanner;
 public class LinearSearch {
 
@@ -7,19 +7,19 @@ public class LinearSearch {
             int c, n, search, array[];
 
             Scanner in = new Scanner(System.in);
-            System.out.println("Enter number of elements");
-            n = in.nextInt();
-            array = new int[n];
+            System.out.print("Enter number of elements : ");
+            int number = in.nextInt();
+            array = new int[number];
 
-            System.out.println("Enter those " + n + " elements");
+            System.out.println("Enter those " + number + " elements");
 
-            for (c = 0; c < n; c++)
+            for (c = 0; c < number; c++)
                 array[c] = in.nextInt();
 
             System.out.println("Enter value to find");
             search = in.nextInt();
 
-            for (c = 0; c < n; c++)
+            for (c = 0; c < number; c++)
             {
                 if (array[c] == search)     /* Searching element is present */
                 {
@@ -27,7 +27,7 @@ public class LinearSearch {
                     break;
                 }
             }
-            if (c == n)  /* Element to search isn't present */
+            if (c == number)  /* Element to search isn't present */
                 System.out.println(search + " isn't present in array.");
         }
 }
