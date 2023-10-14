@@ -1,7 +1,9 @@
 package Arrays.singleDimensional;
 
-class newArray{
-    void demoArray(){
+public class ArrayIntro {
+
+
+    public static void demoArray(){
         int [] ages = new int[3];
         float [] weight = new float[3];
         String [] names = new String[3];
@@ -31,5 +33,9 @@ class newArray{
         System.out.println("Name of 3 : " + names[2]);
 
     }
-}
+    public static void main(String[] args) {
 
+        Arrays.singleDimensional.newArray object = new Arrays.singleDimensional.newArray();
+        object.demoArray();
+    }
+}
