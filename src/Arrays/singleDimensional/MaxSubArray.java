@@ -11,9 +11,8 @@ public class MaxSubArray {
 
         for (int i = 0; i < arr.length; i++) {
             int start = i;
-            int end;
             for (int j = i; j < arr.length; j++) {
-                end = j;
+               int end = j;
                 currSum = 0;
 
                 for (int k = start; k <= end; k++){
@@ -46,9 +45,6 @@ public class MaxSubArray {
         for (int i = 0; i < size; i++){
             System.out.print(array[i] + " ");
         }
-
-
-
         maxSubArraySum(array);
     }
 }
