@@ -1,4 +1,4 @@
-package Oops;
+package Oops.Constructor;
 
 public class Constructor {
 
