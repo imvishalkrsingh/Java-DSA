@@ -1,4 +1,3 @@
-# Java-Programming
 # Java Programming Repository
 
 Welcome to my Java Programming Repository! 🚀 This repository is dedicated to my daily learning and coding in Java. I focus on exploring various topics, including data structures, algorithms, and more.
