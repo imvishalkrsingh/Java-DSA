@@ -1,3 +1,6 @@
+package Backtracking;
+import java.util.Scanner;
+
 public class Classroom {
     public static boolean isSafe(int sudoku[][], int row, int col, int digit) {
         //column
