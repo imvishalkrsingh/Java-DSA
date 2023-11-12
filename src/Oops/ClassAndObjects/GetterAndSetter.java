@@ -1,6 +1,6 @@
 package Oops.ClassAndObjects;
 
-public class Student {
+public class GetterAndSetter {
 
     public String name;
     private int rno;
@@ -24,7 +24,7 @@ public class Student {
 
     public static void main(String[] args) {
         // Creating an instance of the Student class
-        Student student1 = new Student();
+        GetterAndSetter student1 = new GetterAndSetter();
 
         // Setting values using setter methods
         student1.name = "John Doe";
