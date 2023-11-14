@@ -1,5 +1,9 @@
 package Oops.Keywords;
 
+/*
+The 'this' keyword in Java is a reference variable that refers to the current object.
+It is used to represent the instance of the class in which it appears.
+ */
 public class ThisKeyword {
 
     public class Person {
