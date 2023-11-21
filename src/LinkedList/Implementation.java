@@ -51,6 +51,14 @@ public class Implementation {
             temp.next = t;
         }
 
+        int getAt(int idx){
+            Node temp = head;
+            for (int i=1; i<=idx; i++){
+                temp = temp.next;
+            }
+            return temp.data;
+        }
+
         // Displaying the elements of the linked list
         void display(){
             Node temp = head;
@@ -80,5 +88,8 @@ public class Implementation {
         ll.display();
         ll.insertAt(1,99);
         ll.display();
+        System.out.print("Find element at index 3 : ");
+        System.out.println(ll.getAt(3));
+
     }
 }
