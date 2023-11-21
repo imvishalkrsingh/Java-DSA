@@ -51,12 +51,24 @@ public class Implementation {
             temp.next = t;
         }
 
+        // Displaying the elements of the linked list
         int getAt(int idx){
             Node temp = head;
             for (int i=1; i<=idx; i++){
                 temp = temp.next;
             }
             return temp.data;
+        }
+
+        // Displaying the elements of the linked list
+        void deleteAt(int idx){
+            if(idx == 0) head = head.next;
+            Node temp = head;
+            for (int i = 1; i<= idx-1; i++){
+                temp = temp.next;
+            }
+            temp.next = temp.next.next;
+            tail = temp;
         }
 
         // Displaying the elements of the linked list
@@ -90,6 +102,8 @@ public class Implementation {
         ll.display();
         System.out.print("Find element at index 3 : ");
         System.out.println(ll.getAt(3));
-
+        System.out.print("Delete index at 2 : ");
+        ll.deleteAt(2);
+        ll.display();
     }
 }
