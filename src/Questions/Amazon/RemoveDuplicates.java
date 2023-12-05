@@ -11,11 +11,24 @@ public class RemoveDuplicates {
         nums[5] = 2;
         nums[6] = 3;
 
-        System.out.println(mergeSortedArray(nums));
+        int length = removeDuplicates(nums);
+        for (int i = 0; i < length; i++) {
+            System.out.print(nums[i] + " ");
+        }
     }
 
-    public static int mergeSortedArray(int[] nums){
+    public static int removeDuplicates(int[] nums) {
+        if (nums.length == 0) {
+            return 0;
+        }
+
         int i = 0;
-        int j = 1;
+        for (int j = 1; j < nums.length; j++) {
+            if (nums[i] != nums[j]) {
+                i++;
+                nums[i] = nums[j];
+            }
+        }
+        return i + 1;
     }
 }
