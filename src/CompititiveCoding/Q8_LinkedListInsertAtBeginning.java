@@ -16,12 +16,23 @@ public class Q8_LinkedListInsertAtBeginning {
     }
 
     static Node head = null;
+    static Node tail=null;
 
     // Function to insert at beginning
     static void insertAtBeginning(int value) {
+
         Node newNode = new Node(value);
-        newNode.next = head;
-        head = newNode;
+
+        if(head==null){
+            head=newNode;
+            tail=newNode;
+            return;
+
+        }
+
+        tail.next=newNode;
+        tail=newNode;
+
     }
 
     // Function to display linked list
